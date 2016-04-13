@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Arrow Classifieds - Buy and Sell </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <br>
+                <h3>Arrow Classifieds</h3>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../main_page.html#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../main_page.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"></h1>
+                        <br><br>
+                        <p class="intro-text">Enter the details of the item/service you<br>wish to sell</p>
+                        <form class="form-horizontal" action="./insert.php" method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName2" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="exampleInputName2" name="name" placeholder="Name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3"  name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputNumber2" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="exampleInputNumber2"  name="number" placeholder="Number" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category4" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                <select class="form-control" required  name="category">
+                                    <option value="" selected hidden>Category</option>
+                                    <option value="books">Books</option>
+                                    <option value="notes">Notes</option>
+                                    <option value="services">Services</option>
+                                    
+                                </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="exampleInputNumber2" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="exampleInputNumber2" placeholder="Item name"  name="itemname" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category1" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                <select class="form-control" required  name="year">
+                                    <option value="" selected hidden>Year</option>
+                                    <option value="first">First Year</option>
+                                    <option value="second">Second Year</option>
+                                    <option value="third">Third Year</option>
+                                    <option value="fourth">Fourth Year</option>
+                                </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="category2" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                <select class="form-control"  name="subject" required >
+                                    <option value="" selected hidden>Subject</option>
+                                    <option value="am1">Applied Maths 1</option>
+                                    <option value="am2">Applied Maths 2</option>
+                                    <option value="am3">Applied Maths 3</option>
+                                    <option value="ap1">Applied Physics 1</option>
+                                    <option value="ap2">Applied Physics 2</option>
+                                    <option value="oop">OOPS</option>
+                                    <option value="ds">Data Structure</option>
+                                    <option value="dbms">DBMS</option>
+                                    <option value="ac">Applied Chemistry</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category3" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                <select class="form-control"  name="department" required >
+                                    <option value="" selected hidden>Department</option>
+                                    <option value="coe">Computers</option>
+                                    <option value="mech">Mechanical</option>
+                                    <option value="elec">Electrical</option>
+                                    <option value="ce">Civil</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputNumber2" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="exampleInputNumber2" placeholder="Cost"  name="cost" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputText" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="4" placeholder="Additional Details"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default" onclick="">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                       <!-- <a href="#about" class="btn btn-circle page-scroll"> 
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Arrow Classifieds 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    -->
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
